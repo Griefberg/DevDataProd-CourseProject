@@ -16,6 +16,9 @@ The Application
 
 Application called Income Census Data Analysis has been developed and deployed at https://griefberg.shinyapps.io/Course_project_app_final/
 
+(You have to give some time for an application to load, because there is a lot of calculations there)
+
+
 The application allows the user to:
 
 - Understand socio-economic chracteristics of the US population relatilve to its income level
