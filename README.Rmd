@@ -1,0 +1,18 @@
+---
+title: "Census Income Data Set "
+output: html_document
+---
+
+This application is based on the 1996 U.S. Census Income Data set.
+
+Dataset has been obtained from [here](http://archive.ics.uci.edu/ml/datasets/Census+Income) and processed for the course project. 
+
+The first part of application (page Exploratory Analysis) is designed to show basic statistics about USA population relatively to its income. There are three sub-panels - low-income group (annual income <= 50 K dollars a year), high-income group (annual income > 50 K a year) and panel with plots about both.
+
+The second part (page Income Prediction) is built to predict user's potential income relatively to the different socio-economic charateristics using CART algorithm.
+
+Source code for the project is available on the [GitHub]().
+
+The presentation for the project can be found [here]().
+
+
