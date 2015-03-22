@@ -32,3 +32,22 @@ This application is based on the 1996 U.S. Census Income Data set.
 Dataset has been obtained from [here](http://archive.ics.uci.edu/ml/datasets/Census+Income) and processed for the course project.
 
 Source code for the project is available on the [GitHub](https://github.com/Griefberg/DevDataProd-CourseProject).
+
+Data 
+========================================================
+
+```{r, echo=FALSE}
+library(dplyr)
+census <- read.table('data.txt', sep = ',', col.names = c('age', 'workclass', 'fnlwgt',
+                                                        'education', 'education_num', 'marital_status',
+                                                        'occupation', 'relationship', 'race',
+                                                        'sex', 'capital_gain', 'capital_loss',
+                                                        'hours_per_week', 'native_country', 'income'))
+census <- select(census, -education_num, -capital_gain, -capital_loss, -fnlwgt, -workclass, -relationship)
+for (i in 1:length(census)){
+        if (class(census[,i]) == 'factor'){
+                census[,i] <- as.factor(gsub(" ", "", census[,i]))
+        }
+        
+}
+str(census)

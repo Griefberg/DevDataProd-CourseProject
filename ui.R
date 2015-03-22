@@ -36,7 +36,7 @@ shinyUI(
                                              column(12, plotOutput("age_high")),
                                              column(12, plotOutput("sex_high")),
                                              column(12, plotOutput("race_high")),
-                                             column(12, plotOutput("marita_high")),
+                                             column(12, plotOutput("marital_high")),
                                              column(12, plotOutput("education_high")),
                                              column(12, plotOutput("occupation_high")),
                                              column(12, plotOutput("country_high")))))),
