@@ -28,4 +28,4 @@ This application is based on the 1996 U.S. Census Income Data set.
 
 Dataset has been obtained from [here](http://archive.ics.uci.edu/ml/datasets/Census+Income) and processed for the course project.
 
-Source code for the project is available on the [GitHub]().
+Source code for the project is available on the [GitHub](https://github.com/Griefberg/DevDataProd-CourseProject).

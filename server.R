@@ -1,5 +1,4 @@
-setwd('~/Desktop/Educate yourself/Developing Data Products')
-library(dplyr); library(shiny); library(ggplot2); library(caret); library(scales)
+library(dplyr); library(shiny); library(ggplot2); library(caret); library(scales); library(rpart); library(e1071)
 
 census <- read.table('data.txt', sep = ',', col.names = c('age', 'workclass', 'fnlwgt',
                                                         'education', 'education_num', 'marital_status',
@@ -222,6 +221,10 @@ shinyServer(function(input, output) {
         })
         
         ########## INCOME  PREDICTION ###########
+        output$unique_sex <- renderUI({
+                sex <- levels(census$sex)
+                selectInput('sex', 'Choose your sex:', sex)
+        })
         # Random Forest
         set.seed(1234)
         census_sample <- census[sample(nrow(census), 10000), ]
