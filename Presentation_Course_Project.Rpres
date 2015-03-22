@@ -14,7 +14,7 @@ This presentation is designed as part of the course project for the coursera dev
 The Application
 ========================================================
 
-Application called Income Census Data Analysis has been developed and deployed at 
+Application called Income Census Data Analysis has been developed and deployed at https://griefberg.shinyapps.io/Course_project_app_final/
 
 The application allows the user to:
 
